@@ -35,6 +35,9 @@ interface Props {
     image: string;
   };
   btnTitle: string;
+  userInfo: {
+    _id: string;
+  }
 }
 
 const AccountProfile = ({ user, btnTitle }: Props) => {
