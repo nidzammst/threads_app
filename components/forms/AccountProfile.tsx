@@ -35,9 +35,6 @@ interface Props {
     image: string;
   };
   btnTitle: string;
-  userInfo: {
-    _id: string;
-  }
 }
 
 const AccountProfile = ({ user, btnTitle }: Props) => {
@@ -148,7 +145,6 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
               </FormControl>
-              <FormMessage />
             </FormItem>
           )}
         />

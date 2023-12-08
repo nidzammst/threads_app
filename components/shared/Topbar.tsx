@@ -1,12 +1,9 @@
-import { OrganizationSwitcher, SignedIn, SignOutButton, currentUser } from "@clerk/nextjs";
+import { OrganizationSwitcher, SignedIn, SignOutButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Image from "next/image";
 import Link from "next/link";
 
-import React from 'react'
-
-const Topbar = async () => {
-  const user = await currentUser()
+function Topbar() {
   return (
     <nav className='topbar'>
       <Link href='/' className='flex items-center gap-4'>
@@ -40,7 +37,7 @@ const Topbar = async () => {
         />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Topbar
+export default Topbar;
